@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="https://cis-india.org/Christuniversitylogocolour.jpg/download" alt="Foodie App Logo">
+        <div class="nav-links">
+            <a href="index.html">
+                <ion-icon name="home-outline"></ion-icon>
+                Home</a>
+            <a href="about.html">
+                <ion-icon name="information-outline"></ion-icon>
+                About</a>
+            <a href="contact.html">
+                <ion-icon name="people-outline"></ion-icon>
+                Contact</a>
+            <a href="Login.html">
+                <ion-icon name="log-in-outline"></ion-icon>
+                Login</a>
+        </div>
+    </div>    
+    <h1>Mingos</h1>
+    <div class="container">
+        <div id="menu">
+            <h2>Menu</h2>
+            <div id="sort-options">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select" onchange="sortItems()">
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
+            <div id="items" class="grid-container"></div>
+        </div>
+        <div id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="total"></div>
+            <div id="cart-image"></div>
+            <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <footer>
+        <h3>Copyright &copy All rights reserved</h3>
+        <p>Contact Us</p>
+        <div class="footer">
+            <div class="support">
+                <p class="supportfooter">Tech Support</p>
+                <p class="supportfooter">Documentation</p>
+                <p class="supportfooter">F.A.Q</p>
+            </div>
+            <div class="followus">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/mscript.js"></script>
+</body>
+</html>

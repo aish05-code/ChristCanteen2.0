@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0.1%;
+    background-color: #fe8a23;
+    position:relative;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #ff9900;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+#menu{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 80%;
+}
+#cart {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 3%;
+    padding: 20px; /* Reduced padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 40%; /* Adjusted size */
+}
+h4, .pricing{
+    margin: 0;
+}
+
+#cart-items {
+    max-height: 200px; /* Limited height */
+    overflow-y: auto; /* Add scrollbar if needed */
+}
+
+h2 {
+    color: #ff9900;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7c00;
+}
+
+.cart-item {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#total {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#sort-options {
+    margin-bottom: 10px;
+}
+
+#sort-select {
+    padding: 5px;
+    border-radius: 5px;
+}
+.cart-item-image {
+    max-width: 50%; /* Adjust image size */
+    margin-right: 5px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fe8a23;
+    display: flex;
+    justify-content: space-between; /* Aligns elements to left and right */
+    align-items: center; /* Vertically centers elements */
+    padding: 0 3%; /* Padding instead of margin-right */
+}
+
+.logo {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: yellow;
+    transition: .3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 1%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.logoimg {
+    float: center;
+    width: 150px;
+    height: auto;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+
+.fooditems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fooditems > div {
+    text-align: center;
+    margin: 0 auto; 
+    padding: 30px;
+    width: calc(33.33% - 150px);
+    height: 240px;
+    margin-top: 20px;
+    background: #000000a6;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 2px solid rgba(252, 252, 250, 0.281);
+    transition: transform 0.5s ease-in-out;
+    font-size: 20px;
+}
+
+.fooditems > div:hover {
+    transform: scale(1.1);
+}
+.fooditems button {
+    --font-color: #ffd70d;
+    --bg-color: #3a3939;
+    --main-color: #323232;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 8%;
+    position: relative;
+    bottom: 10px;
+}
+
+.fooditems button:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+.fooditems button:hover {
+    background-color: rgb(240, 147, 34);
+}
+
+footer {
+    position: relative;
+    bottom: 10;
+    width: 100%;
+    background-color: #282828eb;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    color: #fff;
+    top: 100px;
+}
+
+.support, .followus{
+    font-size: 35px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+.followus:hover{
+    color: orange;
+}
