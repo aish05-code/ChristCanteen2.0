@@ -243,3 +243,63 @@ footer p{
 .followus:hover{
     color: orange;
 }
+
+
+/* New styles for login page */
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3 columns */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+}
+
+.login-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 8% 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff7c00;
+}
