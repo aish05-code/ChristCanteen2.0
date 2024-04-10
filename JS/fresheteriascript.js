@@ -3,7 +3,7 @@ const items = [
     { name: "Boiled egg", price: 12, image: "boiledegg.jpeg" },
     { name: "Chicken cheese sandwich", price: 65, image: "chicken_sandwich.jpg" },
     { name: "Paneer schezwan noodles", price: 70, image: "paneernoodles.jpeg" },
-    { name: "Watermelon juice", price: 25, image: "paneernoodles.jpeg" },
+    { name: "Watermelon juice", price: 25, image: "watermelon_juice.jpeg" },
     { name: "Bread omelette", price: 40, image: "bread_omelette.jpeg" },
     { name: "Veg pasta", price: 50, image: "vegpasta.jpeg" },
     { name: "Fruit bowl", price: 35, image: "fruit_bowl.jpeg" }
