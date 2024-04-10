@@ -140,11 +140,21 @@ function removeItemFromCart(index) {
     displayCart();
     displayTotal();
 }
-
+// Function to generate a random order number between 1 and 9999
+function generateOrderNumber() {
+    // Generate a random number between 1 and 9999
+    const randomNumber = Math.floor(Math.random() * 9999) + 1;
+    return `Order Number: ${randomNumber}`;
+}
 
 // Function for checkout
 function checkout() {
-    alert("Checkout complete! Thank you for your order.");
+    // Generate a random order number
+    const orderNumber = generateOrderNumber();
+
+    // Show alert with the order number and a thank you message
+    alert(`Checkout complete! ${orderNumber}. Thank you for your order.`);
+
     // Clear the cart after checkout
     cart = [];
     displayCart();

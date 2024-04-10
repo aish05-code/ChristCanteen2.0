@@ -142,15 +142,6 @@ function removeItemFromCart(index) {
 }
 
 
-// Function for checkout
-function checkout() {
-    alert("Checkout complete! Thank you for your order.");
-    // Clear the cart after checkout
-    cart = [];
-    displayCart();
-    displayTotal();
-}
-
 // Function to sort items based on the selected option
 function sortItems() {
     const sortSelect = document.getElementById('sort-select');
@@ -167,3 +158,23 @@ function sortItems() {
 
 // Initial display of items
 displayItems();
+// Function to generate a random order number between 1 and 9999
+function generateOrderNumber() {
+    // Generate a random number between 1 and 9999
+    const randomNumber = Math.floor(Math.random() * 9999) + 1;
+    return `Order Number: ${randomNumber}`;
+}
+
+// Function for checkout
+function checkout() {
+    // Generate a random order number
+    const orderNumber = generateOrderNumber();
+
+    // Show alert with the order number and a thank you message
+    alert(`Checkout complete! ${orderNumber}. Thank you for your order.`);
+
+    // Clear the cart after checkout
+    cart = [];
+    displayCart();
+    displayTotal();
+}
