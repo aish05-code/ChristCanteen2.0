@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandhini</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <ion-icon name="home-outline"></ion-icon>
+            Home
+        </a>
+        <a href="about.html">
+            <ion-icon name="information-outline"></ion-icon>
+            About
+        </a>
+        <a href="contact.html">
+            <ion-icon name="people-outline"></ion-icon>
+            Contact
+        </a>
+        <a href="Login.html">
+            <ion-icon name="log-in-outline"></ion-icon>
+            Login
+        </a>
+        <img class="logo" src="https://cis-india.org/Christuniversitylogocolour.jpg/download" alt="Falcon Logo">
+    </div>
+    <h1>Nandhini</h1>
+    <div class="container">
+        <div id="menu">
+            <h2>Menu</h2>
+            <div id="sort-options">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select" onchange="sortItems()">
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
+            <div id="items" class="grid-container">
+                <!-- Menu Items -->
+                <div class="item">
+                    <img src="Upma.jpg" alt="Upma">
+                    <h3>Upma</h3>
+                    <p>Price: Rs. 20</p>
+                    <button onclick="addToCart('Upma', 20)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="Idli.JPG" alt="Idli">
+                    <h3>Idli</h3>
+                    <p>Price: Rs. 10</p>
+                    <button onclick="addToCart('Idli', 10)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="Vada.jpg" alt="Vada">
+                    <h3>Vada</h3>
+                    <p>Price: Rs. 70</p>
+                    <button onclick="addToCart('Vada', 70)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="rice-bath.JPG" alt="rice-bath">
+                    <h3>rice bath</h3>
+                    <p>Price: Rs. 50</p>
+                    <button onclick="addToCart('Rice bath', 50)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="poori.jpeg" alt="poori">
+                    <h3>poori</h3>
+                    <p>Price: Rs. 60</p>
+                    <button onclick="addToCart('poori', 60)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="Sandwich.jpg" alt="Sandwich">
+                    <h3>Sandwich</h3>
+                    <p>Price: Rs. 40</p>
+                    <button onclick="addToCart('Sandwich', 40)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="bisi-bele-baath.jpeg" alt="bisi-bele-baath">
+                    <h3>bisi bele baath</h3>
+                    <p>Price: Rs. 50</p>
+                    <button onclick="addToCart('bisi-bele-baath', 50)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="Lemon-Rice.jpg" alt="Lemon-Rice">
+                    <h3>Lemon Rice</h3>
+                    <p>Price: Rs. 50</p>
+                    <button onclick="addToCart('Lemon-Rice', 50)">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="total"></div>
+            <button id="checkoutBtn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+    <footer>
+        <h3>All rights reserved</h3>
+        <p>Contact Us</p>
+        <div class="footer">
+            <div class="support">
+                <p class="supportfooter">Tech Support</p>
+                <p class="supportfooter">Documentation</p>
+                <p class="supportfooter">F.A.Q</p>
+            </div>
+            <div class="followus">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+        </div>
+    </footer>
+    <script src="Falconscript2.js"></script>
+</body>
+</html>
